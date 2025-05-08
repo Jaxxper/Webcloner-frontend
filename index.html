@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebCloner</title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2rem;
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 500px;
+      height: 120px;
+      font-size: 16px;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      resize: none;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    audio {
+      margin-top: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>WebCloner</h1>
+    <textarea id="text" placeholder="Enter text to clone..."></textarea><br>
+    <button onclick="cloneVoice()">Clone Voice</button>
+    <audio id="audio" controls style="display:none;"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
